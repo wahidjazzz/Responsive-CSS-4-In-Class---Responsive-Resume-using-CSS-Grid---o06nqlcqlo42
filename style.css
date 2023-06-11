@@ -75,13 +75,12 @@ body {
 }
 .skills {
     line-height: 3em;
-}
-.skill-title {
     font-size: 0.75rem;
     text-transform: uppercase;
     text-align: center;
     padding: 1 rem 0.5rem;
 }
+
 .skill-name {
     font-size: 0.65rem;
     font-weight: 0.65rem;
