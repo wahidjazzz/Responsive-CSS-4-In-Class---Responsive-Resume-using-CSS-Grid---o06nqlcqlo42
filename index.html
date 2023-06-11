@@ -1,121 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">        
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Resume</title>
-        
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Resume using CSS Grid</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://kit.fontawesome.com/bf5a1fe163.js" crossorigin="anonymous"></script>
     </head>
+    
     <body>
-        <main class="main-content" contenteditable="true">
-            <section class="left-section">
+        <main class="main-content">
+        <section class="left-section">
             <div class="left-content">
                 <div class="profile-details">
                     <div class="profile">
-                        <img class="profile-image"
-                            src="https://scontent.fccu17-1.fna.fbcdn.net/v/t31.18172-1/cp0/e15/q65/c0.0.100.100a/p100x100/21167212_1877929515858917_2848594188211361963_o.jpg?_nc_cat=105&ccb=1-5&_nc_sid=dbb9e7&_nc_ohc=H3rA_ti3NdYAX8iaoTt&_nc_ht=scontent.fccu17-1.fna&oh=00_AT8c6n8OScOjf5zVyIhOFuJsySkqMAr202i5q4jx5EM_sw&oe=622C038D"
-                            alt="Error loading profile image">
+                        <img src="./images/PASSPORT_PHOTO.jpeg" alt="Profile Image" class="profile-image">
                     </div>
-                    <h2 class="name">MR JAZZZ</h2>
-                    <h4 class="designation">Student</h4>
+                    <h2 class="name" contenteditable="true">Md. Wahid</h2>
+                    <h3 class="designation" contenteditable="true">Fresher</h3>
                     <hr>
-                    <p class="description">Full Stack Developer Trainee | Web Developer | Fresher </p>
+                    <p class="description">HTML | CSS | JavaScript | Python | Machine Learning | NLP </p>
                 </div>
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="social-media">
-                            <nav>
-                                <ul>
-                                    <li class="icon"><a href="https://www.facebook.com/"><img
-                                                src="https://icon-library.com/images/facebook-icon-url/facebook-icon-url-5.jpg"
-                                                alt="fb" style="height: 27px;"></a></li>
-                                    <li class="icon"><a href="https://www.twitter.com/"><img
-                                                src="https://icon-library.com/images/png-twitter-icon/png-twitter-icon-12.jpg"
-                                                alt="twitter" style="height:22px;"></a></li>
-                                    <li class="icon"><a href="https://www.linkedin.com/"><img
-                                                src="https://icon-library.com/images/official-linkedin-icon-png/official-linkedin-icon-png-29.jpg"
-                                                alt="linkedin" style="height:22px;"></a></li>
-                                    <li class="icon"><a href="https://www.instagram.com/"><img
-                                                src="https://icon-library.com/images/instagram-png-icon/instagram-png-icon-10.jpg"
-                                                alt="insta" style="height: 27px;"></a></li>
-                                </ul>
-                            </nav>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/surjoyday-t-5ba93022a/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Surjoyday">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
                         </div>
-                        <div class="personal-details">
-                            <li class="icon"><img
-                                    src="https://icon-library.com/images/mail-icon-images/mail-icon-images-7.jpg" alt=""
-                                    style="height:22px;"> wahid.9470@gmail.com</li>
-                            <li class="icon"><img
-                                    src="https://icon-library.com/images/telephone-icon-png/telephone-icon-png-25.jpg"
-                                    alt="" style="height:22px;">+91-6201056387</li>
-                            <li class="icon"><img
-                                    src="https://icon-library.com/images/current-location-icon/current-location-icon-22.jpg"
-                                    alt="" style="height:22px;">DC-Block, New Town, Kolkata</li>
-                        </div>
-                        <br>
+                            <div class="profile-details">
+                                <li class="icon" >
+                                    <i class="fa-solid fa-phone"> +91 - 7896106905</i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"> Guwahati,   Assam</i>
+                                </li>
+                            </div>
                     </div>
-                </div>
-                <div>
-                    <div class="skills">
-                        <h2 class="skill-title">Skills</h2>
-                        <div class="skills-content">
-                            <div class="skill-item">
+                    <div class="skills-info">
+                        <h2 class="skills">Skills</h2>
+                        <div class="skils-content">
+                            <div class="skills-item">
                                 <div class="skill-name">
                                     <h3>HTML</h3>
                                 </div>
                                 <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 90%"></div>
+                                    <div class="progress-bar" style="width: 90%;"></div>
                                 </div>
+                            </div>
+                            <div class="skills-item">
                                 <div class="skill-name">
                                     <h3>CSS</h3>
                                 </div>
                                 <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 80%"></div>
+                                    <div class="progress-bar" style="width: 90%;"></div>
                                 </div>
+                            </div>
+                            <div class="skills-item">
                                 <div class="skill-name">
-                                    <h3>JAVASCRIPT</h3>
+                                    <h3>JavaScript</h3>
                                 </div>
                                 <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 50%"></div>
+                                    <div class="progress-bar" style="width: 60%;"></div>
                                 </div>
+                            </div>
+                            <div class="skills-item">
                                 <div class="skill-name">
-                                    <h3>REACT</h3>
+                                    <h3>Python</h3>
                                 </div>
                                 <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 40%"></div>
+                                    <div class="progress-bar" style="width: 40%;"></div>
                                 </div>
+                            </div>
+                            <div class="skills-item">
                                 <div class="skill-name">
-                                    <h3>NODEJS</h3>
+                                    <h3>Machine Learning</h3>
                                 </div>
                                 <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 30%"></div>
+                                    <div class="progress-bar" style="width: 40%;"></div>
                                 </div>
+                            </div>
+                            <div class="skills-item">
                                 <div class="skill-name">
-                                    <h3>MONGODB</h3>
+                                    <h3>NLP</h3>
                                 </div>
                                 <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 70%"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <h3>MYSQL</h3>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 50%"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <h3>PHP</h3>
-                                </div>
-                                <div class="skill-progress">
-                                    <div class="progress-bar" style="width: 80%"></div>
+                                    <div class="progress-bar" style="width: 30%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -123,58 +106,59 @@
                 </div>
             </div>
         </section>
-
-            <section class="right-section">
+        <section class="right-section">
             <div class="right-main-content">
-                <section class="about sect">
+                <section class="about-section">
                     <h2 class="right-title">About Me</h2>
-                    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam veniam cum
-                        incidunt
-                        optio ex molestias aut? Magnam ullam asperiores ea ratione beatae repellat laudantium commodi
-                        nulla,
-                        reiciendis non veritatis eum sit molestiae veniam et vel eveniet aperiam iusto, voluptatem
-                        voluptatum? Fuga eaque iste quaerat, ad id sequi aliquid iusto impedit quo numquam, expedita
-                        beatae
-                        vel neque delectus voluptatem inventore itaque rem possimus. Iusto, assumenda suscipit deserunt
-                        laborum consequuntur iste reprehenderit modi enim, mollitia molestias sint sunt. Velit provident
-                        corporis amet?</p>
+                    <p>A BBA Graduate in Marketing, having excellent aptitude for work, learn and explore the challenges of the real world. I am seeking an opportunities in my related industry to begin my career journey and grow my skills while simultaneously contributing to the organization&apos;s business goal through my analytical skills, agility and deep interest for new technological domains.</p>
                 </section>
-                <section class="education sect">
+                <br>
+                <section class="education-section">
                     <h2 class="right-title">Education</h2>
-                    <div class="education-content">
-                        <h3 class="education-title">Masters in witchcraft and wizardry</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id delectus consequatur qui
-                            pariatur, error atque quis omnis? Corrupti asperiores veniam, sunt, perspiciatis blanditiis
-                            molestias et illo odio iste expedita, alias non vel magni similique commodi temporibus? Quae
-                            recusandae consectetur suscipit accusamus veniam, nulla tempore quos at sed, illo fugit
-                            consequuntur!</p>
-                        <h3 class="education-title">Bachelors in witchcraft and wizardry</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptate vero minus
-                            incidunt perspiciatis earum minima esse aperiam cumque maiores ut sint, quasi possimus culpa
-                            cupiditate! Ut iusto possimus, veniam quidem dolore aut. Blanditiis assumenda dolor
-                            exercitationem expedita, beatae numquam vero sapiente? A odit officia ut alias tenetur
-                            magnam maiores.</p>
-                    </div>
+                    <br>
+                    <h3 class="btech">Bachelor of Business Administration</h3>
+                    <br>
+                    <p>Techno India University, CGPA : 7.3</p>
+                    <br>
+                    <p><em>Major courses : Computer networks, Mobile Computing, Cryptography and network security, Basics of E-commerce. Tally</em></p>
+                    <br>
+                    <h3 class="hs">BSEB, Class XII</h3>
+                    <br>
+                    <p>S.R.R.S Secondary High School, Patna, Bihar, Percentage: 64.6%</p>
+                    <br>
+                    <h3 class="matric">CBSE, Class X</h3>
+                    <br>
+                    <p>T. Raja High School, Patna, Bihar, CGPA : 8.8</p> 
                 </section>
-                <section class="experience sect">
-                    <h2 class="right-title">Experience</h2>
-                    <div class="experience-content">
-                        <h3 class="education-title">Cloud Architect</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id delectus consequatur qui
-                            pariatur, error atque quis omnis? Corrupti asperiores veniam, sunt, perspiciatis blanditiis
-                            molestias et illo odio iste expedita, alias non vel magni similique commodi temporibus? Quae
-                            recusandae consectetur suscipit accusamus veniam, nulla tempore quos at sed, illo fugit
-                            consequuntur!</p>
-                        <h3 class="education-title">Stars Architect</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptate vero minus
-                            incidunt perspiciatis earum minima esse aperiam cumque maiores ut sint, quasi possimus culpa
-                            cupiditate! Ut iusto possimus, veniam quidem dolore aut. Blanditiis assumenda dolor
-                            exercitationem expedita, beatae numquam vero sapiente? A odit officia ut alias tenetur
-                            magnam maiores.</p>
-                    </div>
+                <br>
+                <section class="project-section">
+                    <h2 class="right-title">Academic Project</h2>
+                    <br>
+                    <h3>Word- level language identification on code-mixed data using ML</h3>
+                    <span>(September 2021 - January 2022)</span>
+                    <br>
+                    <br>
+                    <p>This project is focused on creating a language identification model at word-level for detection of English- Assamese text from the code-mixed corpus and use machine learning methods to identify English-Assamese languages.</p>
+
+                    <br>
+
+                    <h3>Context analysis of social media text</h3>
+                    <span>(May 2022 - July 2022)</span>
+                    <br>
+                    <br>
+                    <p>This project emphasizes on creating a comparison model to detect the contexts of the social media text using a context database.</p>
                 </section>
+                <br>
+                <section class="course-section">
+                    <h2 class="right-title">Courses</h2>
+                    <br>
+                    <h3 class="course-h3">Data Science and machine leaning using python, NIELIT</h3>
+                    <br>
+                    <p>Overview of Python, Data Science Concepts with Numpy, Pandas Library, Exploratory Data Anal- ysis, Data Visualization using Matplotlib and Seaborn, Machine Learning concepts with supervised, unsupervised machine learning Algorithms.</p>
+                </section>
+
             </div>
         </section>
-        </main>
+    </main>
     </body>
 </html> 
