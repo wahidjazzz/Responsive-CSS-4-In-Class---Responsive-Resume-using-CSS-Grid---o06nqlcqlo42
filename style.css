@@ -5,101 +5,169 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-    background-color: #a6abad;
+hr{
+    width: 100%;
+    border: 0.03em solid white;
 }
-.main-content {
-    min-height: 1000px;
-    width: 90%;
-    margin: 20px auto;
+
+.main-content{
     display: grid;
     grid-template-columns: 300px 700px;
+    width: 90%;
+    min-height: 1000px;
+    margin: 20px auto;
 }
 
-.left-section {
-    padding: 1rem;
-    grid-column: span 1;
+.left-section{
     background-color: #242531;
-    color: white;
-}
-.right-section {
-    color: #000000;
-    grid-column: span 1 / span 2;
-    background-color: #f7f7f7;
+    color: azure;
+    grid-column: span 1;
 }
 
-.profile-image {
-    width: 80px;
-    position: relative;
-    left: 38px;
-    top: 10px;
+.right-section{
+    grid-column: span 1 / span 2;
 }
-.profile-details {
+
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image{
     display: block;
     margin: auto;
-    border: 5px white solid;
+    border: 5px solid white;
     border-radius: 30%;
     width: 60%;
 }
-.name {
+
+.name{
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
-    word-spacing: 0.02px;
-    padding: 0.8rem;
     text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
 }
-.designation {
+
+.designation{
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
 }
-.description {
+
+.description{
     font-size: 0.75rem;
     text-align: center;
     padding: 1rem;
 }
-.social-media li {
-    list-style: none;
-    display: inline;
-    padding: 0 10px
-}
-.personal-details li {
-    line-height: 2em;
-}
-.progress-bar {
-    display: block;
-    border: 1px white solid;
-    height: 4px;
-}
-.skills {
-    line-height: 3em;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1 rem 0.5rem;
+
+.social-media{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.skill-name {
-    font-size: 0.65rem;
-    font-weight: 0.65rem;
+.fa-instagram{
+    background-image: linear-gradient(180deg, yellow , orange , pink , purple, blue );
+}
+.fa-linkedin{
+    color: #0A66C2;
+}
+.fa-github{
+    color: whitesmoke;
+}
+
+.profile-details{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-phone{
+    font-size: 10px;
+}
+.fa-location-dot{
+    font-size: 10px;
+}
+
+.skills{
+    font-size: 0.75rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.skill-name{
     text-align: left;
     padding-bottom: 0.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
 }
- 
-.right-main-content {
+
+.skills-item{
+    padding-bottom: 10px;
+}
+
+
+.progress-bar{
+   border: 1px solid white;
+   height: 4px;
+   background-color: azure;
+   border-radius: 5px;    
+}
+
+/* RIGHT SECTION  */
+
+.right-main-content{
     padding: 2rem 3rem;
 }
-.right-title {
+
+.right-title{
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 0.5rem;
     letter-spacing: 1px;
 }
-@media screen and (max-width: 673px) {
-    .main-content {
-        grid-template-columns: repeat(1, 1fr);
+
+p{
+    text-align: justify;
+}
+
+.btech::after{
+    position: relative;
+    left: 30px;
+    content: "(2018 - 2022)";
+    font-size: 0.90rem;
+}
+.hs::after{
+    position: relative;
+    left: 30px;
+    content: "(December 2017)";
+    font-size: 0.90rem;
+}
+.matric::after{
+    position: relative;
+    left: 30px;
+    content: "(June 2015)";
+    font-size: 0.90rem;
+}
+
+.course-h3::after{
+    content: "(June 2021 - July 2021)";
+    position: relative;
+    left: 20px;
+    font-size: 0.75rem;
+}
+
+@media screen and  (max-width:673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
     }
 }
